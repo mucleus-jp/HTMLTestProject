@@ -25,7 +25,7 @@ function OnTick()
 {
     let id = Math.floor( ( Math.random() * CELLS ) );
     let name = CELL_ID_PREFIX + id;
-    document.getElementById( name ).style.setProperty( 'background-image', 'url( mole.png )' );
+    document.getElementById( name ).style.setProperty( 'background-image', 'url( res/mole.png )' );
 
     setInterval( OnTick, 1000 );
 

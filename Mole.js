@@ -18,15 +18,22 @@ function onLoad()
     } 
     s += "</table>";
     document.getElementById( 'GameArea' ).innerHTML = s;
-    OnTick();
-}
-
-function OnTick()
-{
-    let id = Math.floor( ( Math.random() * CELLS ) );
-    let name = CELL_ID_PREFIX + id;
-    document.getElementById( name ).style.setProperty( 'background-image', 'url( res/mole.png )' );
 
     setInterval( OnTick, 1000 );
+}
+
+let mogPos = -1;
+function OnTick()
+{
+    if( mogPos >= 0 ){
+        let name = CELL_ID_PREFIX + mogPos;
+        document.getElementById( name ).style.setProperty( 'background-image', 'url( res/hole.png )' );    
+    }
+
+    let id = Math.floor( ( Math.random() * ( CELLS + 1 ) ) - 1;
+    if( id >= 0 ){
+        let name = CELL_ID_PREFIX + id;
+        document.getElementById( name ).style.setProperty( 'background-image', 'url( res/mole.png )' );
+    }
 
 }

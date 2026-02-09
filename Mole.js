@@ -15,5 +15,5 @@ function onLoad()
         s += "</tr>";
     } 
     s += "</table>";
-    document.getElementById( 'GameArea' ).innnerHTML = s;
+    document.getElementById( 'GameArea' ).innerHTML = s;
 }

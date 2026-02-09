@@ -14,6 +14,6 @@ function onLoad()
         }
         s += "</tr>";
     } 
-    s += "</html>";
+    s += "</table>";
     document.getElementById( 'GameArea' ).innnerHTML = s;
 }

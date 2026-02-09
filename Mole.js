@@ -1,4 +1,4 @@
-document.addEventListener( 'load', onLoad );
+window.addEventListener( 'load', onLoad );
 
 const ROWS = 3;
 const COLS = 3;

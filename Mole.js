@@ -18,7 +18,7 @@ function onLoad()
     } 
     s += "</table>";
     document.getElementById( 'GameArea' ).innerHTML = s;
-    Ontick();
+    OnTick();
 }
 
 function OnTick()

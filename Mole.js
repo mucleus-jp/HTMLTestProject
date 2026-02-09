@@ -8,11 +8,11 @@ function onLoad()
     let s = "<table>";
 
     for( let y = 0; y < ROWS; y++ ){
-        s += "<tr?";
+        s += "<tr>";
         for( let x = 0; x < COLS; x++ ){
             s += "<td id = 'col'" + y + x + "></td>";
         }
-        s += "</tr?";
+        s += "</tr>";
     } 
     s += "</html>";
     document.getElementById( 'GameArea' ).innnerHTML = s;

@@ -12,7 +12,7 @@ function onLoad()
     for( let y = 0; y < ROWS; y++ ){
         s += "<tr>";
         for( let x = 0; x < COLS; x++ ){
-            s += "<td id = '" + CELL_ID_PREFIX + "'" + ( y * COLS + x ) + "></td>";
+            s += "<td id = '" + CELL_ID_PREFIX + ( y * COLS + x ) + "'></td>";
         }
         s += "</tr>";
     } 

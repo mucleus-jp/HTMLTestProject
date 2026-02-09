@@ -30,10 +30,11 @@ function OnTick()
         document.getElementById( name ).style.setProperty( 'background-image', 'url( res/hole.png )' );    
     }
 
-    let id = Math.floor( Math.random() * ( CELLS + 1 ) ) - 1;
-    if( id >= 0 ){
-        let name = CELL_ID_PREFIX + id;
+    mogPos = Math.floor( Math.random() * ( CELLS + 1 ) ) - 1;
+    if( mogPos >= 0 ){
+        let name = CELL_ID_PREFIX + mogPos;
         document.getElementById( name ).style.setProperty( 'background-image', 'url( res/mole.png )' );
     }
+    
 
 }
